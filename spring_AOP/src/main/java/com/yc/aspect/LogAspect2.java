@@ -17,7 +17,7 @@ import java.util.Date;
  * @create: 2021-04-09 20:24
  */
 @Aspect
-@Component//IOC注解    以实现spring托管的功能
+@Component  //IOC注解    以实现spring托管的功能
 
 public class LogAspect2 {
     @Pointcut("execution(* com.yc.biz.StudentBizImpl.add*(..))")//切入点表达式：那些方法加增强
