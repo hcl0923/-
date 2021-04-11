@@ -5,6 +5,6 @@ public interface StudentBiz {
 
     void update(String name);
 
-    String String(String name);
+    String find(String name);
 
 }

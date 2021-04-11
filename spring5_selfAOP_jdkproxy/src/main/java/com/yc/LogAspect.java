@@ -11,14 +11,14 @@ import java.lang.reflect.Proxy;
  * @create: 2021-04-10 19:23
  */
 public class LogAspect implements InvocationHandler {
-    private Object target;
+    private Object target;//目标类的对象
 
     public LogAspect(Object target) {
         this.target = target;
-
     }
 
     public Object createProxy() {
+        //新建一个代理实例
         return Proxy.newProxyInstance(this.target.getClass().getClassLoader(), this.target.getClass().getInterfaces(), this);
     }
 

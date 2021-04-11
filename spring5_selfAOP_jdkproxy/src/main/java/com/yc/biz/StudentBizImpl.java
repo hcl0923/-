@@ -10,18 +10,18 @@ public class StudentBizImpl implements StudentBiz {
 
     @Override
     public int add(String name) {
-        
         System.out.println("調用了studentBizImpl中的add" + name);
         return 100;
     }
 
     @Override
     public void update(String name) {
-        System.out.println("");
+        System.out.println("调用了studentBizImpl中的update " + name);
     }
 
     @Override
-    public String String(String name) {
-        return null;
+    public String find(String name) {
+        System.out.println("调用了studentImpl中的find " + name);
+        return name + "===";
     }
 }
