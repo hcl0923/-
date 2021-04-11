@@ -10,6 +10,7 @@ public class StudentBizImpl implements StudentBiz {
 
     @Override
     public int add(String name) {
+        
         System.out.println("調用了studentBizImpl中的add" + name);
         return 100;
     }
